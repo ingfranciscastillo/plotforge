@@ -1,36 +1,15 @@
 import Link from "next/link";
 import BuyMeaCoffee from "./icons/BuyMeACoffeeIcon";
-import Twitter from "./icons/XformerlyTwitter";
 import Facebook from "./icons/FacebookIcon";
 import Threads from "./icons/ThreadsIcon";
 import XformerlyTwitter from "./icons/XformerlyTwitter";
 import Instagram from "./icons/InstagramIcon";
 
 const links = [
-  {
-    title: "Features",
-    href: "#",
-  },
-  {
-    title: "Solution",
-    href: "#",
-  },
-  {
-    title: "Customers",
-    href: "#",
-  },
-  {
-    title: "Pricing",
-    href: "#",
-  },
-  {
-    title: "Help",
-    href: "#",
-  },
-  {
-    title: "About",
-    href: "#",
-  },
+  { title: "Home", href: "/" },
+  { title: "Explore", href: "/explore" },
+  { title: "FAQ", href: "/faq" },
+  { title: "About", href: "/about" },
 ];
 
 export default function FooterSection() {

@@ -7,10 +7,10 @@ import Image from "next/image";
 import { ModeToggle } from "./mode-toggle";
 
 const menuItems = [
-  { name: "Home", href: "/" },
-  { name: "Solution", href: "#" },
-  { name: "Pricing", href: "#" },
-  { name: "About", href: "#" },
+  { name: "Inicio", href: "/" },
+  { name: "Explorar", href: "/explore" },
+  { name: "FAQ", href: "/faq" },
+  { name: "Sobre nosotros", href: "/about" },
 ];
 
 export default function HeroSection() {
@@ -63,12 +63,12 @@ export default function HeroSection() {
                 <div className="flex w-full flex-col space-y-3 sm:flex-row sm:gap-3 sm:space-y-0 md:w-fit lg:border-l lg:pl-6">
                   <Button asChild variant="outline" size="sm">
                     <Link href="/sign-in">
-                      <span>Login</span>
+                      <span>Inicia sesión</span>
                     </Link>
                   </Button>
                   <Button asChild size="sm">
                     <Link href="/sign-up">
-                      <span>Sign up</span>
+                      <span>Regístrate</span>
                     </Link>
                   </Button>
                   <ModeToggle />
