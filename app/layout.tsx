@@ -9,8 +9,32 @@ import { ThemeProvider } from "@/components/theme-provider";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "PlotForge - Interactive Story Creator",
-  description: "Create and explore branching narratives",
+  title: "PlotForge - Creador de Historias Interactivas",
+  description:
+    "Crea historias interactivas ramificadas donde cada decisión cuenta. Construye narrativas envolventes como novelas visuales y juegos narrativos.",
+  keywords: [
+    "historias interactivas",
+    "novelas visuales",
+    "juegos narrativos",
+    "creador de historias",
+    "narrativas ramificadas",
+    "escribir historias",
+    "crear juegos narrativos",
+    "historias ramificadas",
+    "escribir novelas visuales",
+    "historias de decisiones",
+    "narrativas interactivas",
+    "escribir juegos de decisiones",
+    "historias de ramificación",
+    "crear novelas interactivas",
+    "escribir narrativas interactivas",
+    "historias de múltiples finales",
+    "crear historias de decisiones",
+    "escribir historias interactivas",
+    "historias de elecciones",
+    "crear narrativas ramificadas",
+    "escribir juegos de elecciones",
+  ],
 };
 
 export default function RootLayout({
