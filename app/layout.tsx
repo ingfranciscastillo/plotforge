@@ -2,6 +2,7 @@ import "./globals.css";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import { ClerkProvider } from "@clerk/nextjs";
+import { experimental__simple } from "@clerk/themes";
 import { esES } from "@clerk/localizations";
 import { Toaster } from "react-hot-toast";
 import { ThemeProvider } from "@/components/theme-provider";
@@ -43,12 +44,17 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <ClerkProvider localization={esES}>
+    <ClerkProvider
+      localization={esES}
+      appearance={{
+        theme: experimental__simple,
+      }}
+    >
       <html lang="es" suppressHydrationWarning>
         <body className={inter.className}>
           <ThemeProvider attribute={"class"} defaultTheme="system" enableSystem>
             {children}
-            <Toaster position="top-right" />
+            <Toaster position="top-center" />
           </ThemeProvider>
         </body>
       </html>

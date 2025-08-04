@@ -14,6 +14,7 @@ import { db } from "@/lib/db";
 import { stories } from "@/lib/db/schema";
 import { eq } from "drizzle-orm";
 import { Plus, BookOpen, Calendar, Play } from "lucide-react";
+import { UserButton } from "@clerk/nextjs";
 
 export default async function DashboardPage() {
   const { userId } = await auth();
@@ -43,6 +44,7 @@ export default async function DashboardPage() {
             Nueva Historia
           </Button>
         </Link>
+        <UserButton />
       </div>
 
       {userStories.length === 0 ? (
