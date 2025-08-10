@@ -11,9 +11,6 @@ import {
   pixelBasedPreset,
 } from "@react-email/components";
 import { Section } from "lucide-react";
-import Facebook from "../icons/FacebookIcon";
-import Instagram from "../icons/InstagramIcon";
-import XformerlyTwitter from "../icons/XformerlyTwitter";
 
 interface WelcomeEmailProps {
   name: string;
